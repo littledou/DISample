@@ -1,0 +1,4 @@
+include ':hiltsample'
+include ':daggersample'
+include ':app'
+rootProject.name = "DISample"
