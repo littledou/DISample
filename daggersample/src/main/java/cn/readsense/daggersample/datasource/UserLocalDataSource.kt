@@ -7,5 +7,6 @@ class UserLocalDataSource @Inject constructor() {
 
     init {
         DLog.d("UserLocalDataSource init")
+        Thread.sleep(1000)
     }
 }

@@ -6,5 +6,6 @@ import javax.inject.Inject
 class HttpUtil @Inject constructor() {
     init {
         DLog.d("HttpUtil init")
+        Thread.sleep(1000)
     }
 }
