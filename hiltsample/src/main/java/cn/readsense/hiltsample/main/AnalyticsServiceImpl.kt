@@ -1,5 +1,6 @@
-package cn.readsense.hiltsample
+package cn.readsense.hiltsample.main
 
+import cn.readsense.hiltsample.DLog
 import javax.inject.Inject
 
 class AnalyticsServiceImpl @Inject constructor() : AnalyticsService {
@@ -8,4 +9,7 @@ class AnalyticsServiceImpl @Inject constructor() : AnalyticsService {
 
     }
 
+    init {
+        DLog.d("AnalyticsServiceImpl init")
+    }
 }

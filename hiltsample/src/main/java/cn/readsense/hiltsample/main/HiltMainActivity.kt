@@ -1,7 +1,8 @@
-package cn.readsense.hiltsample
+package cn.readsense.hiltsample.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import cn.readsense.hiltsample.R
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

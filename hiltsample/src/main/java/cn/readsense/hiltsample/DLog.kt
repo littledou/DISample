@@ -6,11 +6,11 @@ class DLog {
 
     companion object {
         fun d(log: String) {
-            Log.d("DLog", log)
+            Log.e("DLog", log)
         }
 
         fun e(log: String) {
-            Log.d("DLog", log)
+            Log.e("DLog", log)
         }
     }
 

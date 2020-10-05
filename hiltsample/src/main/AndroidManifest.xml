@@ -10,7 +10,7 @@
         android:name=".ExampleApplication"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HiltMainActivity">
+        <activity android:name=".main.HiltMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
