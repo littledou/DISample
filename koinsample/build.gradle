@@ -1,15 +1,13 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'dagger.hilt.android.plugin'
 
 android {
     compileSdkVersion 29
     buildToolsVersion "30.0.1"
 
     defaultConfig {
-        applicationId "cn.readsense.hiltsample"
+        applicationId "cn.readsense.koinsample"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
@@ -36,7 +34,15 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    ext.koin_version = "2.1.6"
 
-    implementation "com.google.dagger:hilt-android:2.29-alpha"
-    kapt "com.google.dagger:hilt-android-compiler:2.29-alpha"
+
+    implementation "org.koin:koin-android:$koin_version"
+
+    implementation "org.koin:koin-android-viewmodel:$koin_version"
+//    // Koin for Kotlin apps
+//    implementation "org.koin:koin-core:$koin_version"
+//    // Testing
+//    testImplementation "org.koin:koin-test:$koin_version"
+
 }

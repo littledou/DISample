@@ -35,17 +35,24 @@ dependencies {
 ```
 ##### 关键字
 -`@Inject`：告知Dagger如何创建该类，其依赖项必须也增加该注释
+
 -`@Singleton`：此类单例实例化，对应的图接口也必须增加该注释
 
 -`@Component`：定义该接口为一个依赖关系图，会让Dagger生成一个容器，其中包含满足其提供的类型的所需所以依赖项
+
 -`@Binds`：告知 Dagger 接口应采用哪种实现
+
 -`@Provides`：告知 Dagger 如何提供您的项目所不具备的类
+
 -`@ApplicationScope`：
+
 -`@LoggedUserScope`：
+
 -`@ActivityScope`：
+
 -`@DisableInstallInCheck`：... is missing an @InstallIn annotation. If this was intentional,see [this page](https://dagger.dev/hilt/compiler-options#disable-install-in-check) for how to disable this check
 
-#####定义图的功能
+##### 定义图的功能
 ```kotlin
 @Singleton
 @Component

@@ -1,3 +1,4 @@
+include ':koinsample'
 include ':hiltsample'
 include ':daggersample'
 include ':app'
